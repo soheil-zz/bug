@@ -5,7 +5,7 @@ module Api
 	    	if params[:entity_type] == nil || params[:entity_id] == nil
 		      return render json: {message: 'missing required params entity_type, entity_id'}
 		    end
-		    tags = Tag.wh1ere(:entity_id => params[:entity_id], :entity_type => params[:entity_type])
+		    tags = Tag.where(:entity_id => params[:entity_id], :entity_type => params[:entity_type])
 	      render json: tags.to_json
 	    end
 

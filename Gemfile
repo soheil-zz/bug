@@ -8,7 +8,6 @@ gem 'rails-api'
 gem 'spring', :group => :development
 
 gem 'pg'
-gem 'sqlite3'
 gem 'jbuilder'
 gem 'rails_12factor', group: :production
 

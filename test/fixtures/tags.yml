@@ -2,10 +2,10 @@
 
 one:
   tid: MyString
-  type: 
+  etype: MyString
   value: MyString
 
 two:
   tid: MyString
-  type: 
+  etype: MyString
   value: MyString

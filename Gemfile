@@ -9,6 +9,8 @@ gem 'spring', :group => :development
 
 
 gem 'sqlite3'
+gem 'jbuilder'
+gem 'rails_12factor', group: :production
 
 
 
@@ -26,3 +28,5 @@ gem 'sqlite3'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+ruby "2.2.0"

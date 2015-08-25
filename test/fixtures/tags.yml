@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  tid: MyString
-  etype: MyString
+  entity_id: MyString
+  entity_type: MyString
   value: MyString
 
 two:
-  tid: MyString
-  etype: MyString
+  entity_id: MyString
+  entity_type: MyString
   value: MyString

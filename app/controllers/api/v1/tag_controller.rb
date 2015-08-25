@@ -3,19 +3,19 @@ module Api
     class TagController < ApplicationController
 	    def create
 	    	# probably better to let rails handle validations
-	    	if params[:etype] == nil || params[:eid] == nil || params[:tags] == nil
+	    	if params[:entity_type] == nil || params[:entity_id] == nil || params[:tags] == nil
 		      return render json: {message: 'missing required params'}
 		    end
-		    Tag.where(:eid => params[:eid]).destroy_all
+		    Tag.where(:entity_id => params[:entity_id]).destroy_all
 		    # we could use a different association in ActiveRecord
 		    params[:tags].each do |tag|
 			    Tag.create(
-			    	:etype => params[:type],
-			    	:eid => params[:eid],
+			    	:entity_type => params[:entity_type],
+			    	:entity_id => params[:entity_id],
 			    	:value => tag
 			    )
 			  end
-	      # render json: {message: params[:type]}
+	      render json: {message: 'success'}
 	    end
     end
   end

@@ -1,9 +1,9 @@
 class CreateTags < ActiveRecord::Migration
   def change
     create_table :tags do |t|
-      t.tid :name
-      t.type :name
-      t.value :name
+      t.string :tid
+      t.string :type
+      t.string :value
 
       t.timestamps null: false
     end
